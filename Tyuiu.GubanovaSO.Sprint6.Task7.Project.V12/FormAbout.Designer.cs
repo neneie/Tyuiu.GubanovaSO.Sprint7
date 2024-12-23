@@ -82,14 +82,15 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(663, 336);
+            ClientSize = new Size(663, 311);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(588, 358);
+            MaximumSize = new Size(681, 358);
+            MinimumSize = new Size(681, 358);
             Name = "FormAbout";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";

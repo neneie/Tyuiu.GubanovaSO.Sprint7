@@ -20,7 +20,7 @@ namespace Tyuiu.GubanovaSO.Sprint6.Task7.Project.V12
         {
             FormMain mainForm = new FormMain();
             mainForm.Show();
-            this.Hide();
+            this.Close();
         }
         private void buttonInfo_GSO_Click(object sender, EventArgs e)
         {
