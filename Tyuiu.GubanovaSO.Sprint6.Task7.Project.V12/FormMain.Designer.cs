@@ -30,13 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             panelButtonsInPut_VAA = new Panel();
-            buttonPrice_GSO = new Button();
             button1 = new Button();
-            buttonInfo_GSO = new Button();
             buttonShowShopInfo_GSO = new Button();
             buttonShowModels_GSO = new Button();
             groupBoxInfo_GSO = new GroupBox();
@@ -52,9 +47,19 @@
             labelName_GSO = new Label();
             buttonDone_GSO = new Button();
             pictureBox1 = new PictureBox();
+            menuStrip1 = new MenuStrip();
+            ToolStripMenuItemProgramm_GSO = new ToolStripMenuItem();
+            ToolStripMenuAbout_GSO = new ToolStripMenuItem();
+            выходToolStripMenuItem = new ToolStripMenuItem();
+            базаДанныхToolStripMenuItem = new ToolStripMenuItem();
+            перейтиКПапкеToolStripMenuItem = new ToolStripMenuItem();
+            добавитьСвоюМодельToolStripMenuItem = new ToolStripMenuItem();
+            руководствомодельToolStripMenuItem = new ToolStripMenuItem();
+            добавитьмодельToolStripMenuItem = new ToolStripMenuItem();
+            добавитьСвойБрендToolStripMenuItem = new ToolStripMenuItem();
+            руководствофирмаToolStripMenuItem1 = new ToolStripMenuItem();
+            добавитьфирмаToolStripMenuItem1 = new ToolStripMenuItem();
             panelRes_GSO = new Panel();
-            label1 = new Label();
-            chartPrice_GSO = new System.Windows.Forms.DataVisualization.Charting.Chart();
             labelShopInfo_GSO = new Label();
             labelShowModels_GSO = new Label();
             labelRes_GSO = new Label();
@@ -65,30 +70,22 @@
             panelButtonsInPut_VAA.SuspendLayout();
             groupBoxInfo_GSO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            menuStrip1.SuspendLayout();
             panelRes_GSO.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)chartPrice_GSO).BeginInit();
             SuspendLayout();
             // 
             // panelButtonsInPut_VAA
             // 
             panelButtonsInPut_VAA.BackColor = Color.FromArgb(255, 192, 192);
-            panelButtonsInPut_VAA.Controls.Add(buttonPrice_GSO);
             panelButtonsInPut_VAA.Controls.Add(button1);
-            panelButtonsInPut_VAA.Controls.Add(buttonInfo_GSO);
             panelButtonsInPut_VAA.Controls.Add(buttonShowShopInfo_GSO);
             panelButtonsInPut_VAA.Controls.Add(buttonShowModels_GSO);
             panelButtonsInPut_VAA.Controls.Add(groupBoxInfo_GSO);
             panelButtonsInPut_VAA.Controls.Add(buttonDone_GSO);
             panelButtonsInPut_VAA.Controls.Add(pictureBox1);
+            panelButtonsInPut_VAA.Controls.Add(menuStrip1);
             resources.ApplyResources(panelButtonsInPut_VAA, "panelButtonsInPut_VAA");
             panelButtonsInPut_VAA.Name = "panelButtonsInPut_VAA";
-            // 
-            // buttonPrice_GSO
-            // 
-            resources.ApplyResources(buttonPrice_GSO, "buttonPrice_GSO");
-            buttonPrice_GSO.Name = "buttonPrice_GSO";
-            buttonPrice_GSO.UseVisualStyleBackColor = true;
-            buttonPrice_GSO.Click += buttonPrice_GSO_Click;
             // 
             // button1
             // 
@@ -96,16 +93,6 @@
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // buttonInfo_GSO
-            // 
-            resources.ApplyResources(buttonInfo_GSO, "buttonInfo_GSO");
-            buttonInfo_GSO.BackColor = Color.LightCoral;
-            buttonInfo_GSO.BackgroundImage = Properties.Resources.cog;
-            buttonInfo_GSO.Name = "buttonInfo_GSO";
-            toolTip_GSO.SetToolTip(buttonInfo_GSO, resources.GetString("buttonInfo_GSO.ToolTip"));
-            buttonInfo_GSO.UseVisualStyleBackColor = false;
-            buttonInfo_GSO.Click += buttonInfo_GSO_Click;
             // 
             // buttonShowShopInfo_GSO
             // 
@@ -227,11 +214,93 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.BackColor = Color.FromArgb(255, 192, 192);
+            resources.ApplyResources(menuStrip1, "menuStrip1");
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ToolStripMenuItemProgramm_GSO, базаДанныхToolStripMenuItem });
+            menuStrip1.Name = "menuStrip1";
+            // 
+            // ToolStripMenuItemProgramm_GSO
+            // 
+            ToolStripMenuItemProgramm_GSO.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuAbout_GSO, выходToolStripMenuItem });
+            ToolStripMenuItemProgramm_GSO.Name = "ToolStripMenuItemProgramm_GSO";
+            resources.ApplyResources(ToolStripMenuItemProgramm_GSO, "ToolStripMenuItemProgramm_GSO");
+            ToolStripMenuItemProgramm_GSO.Click += оПрограммеToolStripMenuItem_Click;
+            // 
+            // ToolStripMenuAbout_GSO
+            // 
+            ToolStripMenuAbout_GSO.BackColor = Color.FromArgb(255, 192, 192);
+            ToolStripMenuAbout_GSO.Name = "ToolStripMenuAbout_GSO";
+            resources.ApplyResources(ToolStripMenuAbout_GSO, "ToolStripMenuAbout_GSO");
+            ToolStripMenuAbout_GSO.Click += ToolStripMenuAbout_GSO_Click;
+            // 
+            // выходToolStripMenuItem
+            // 
+            выходToolStripMenuItem.BackColor = Color.FromArgb(255, 192, 192);
+            выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            resources.ApplyResources(выходToolStripMenuItem, "выходToolStripMenuItem");
+            выходToolStripMenuItem.Click += выходToolStripMenuItem_Click;
+            // 
+            // базаДанныхToolStripMenuItem
+            // 
+            базаДанныхToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { перейтиКПапкеToolStripMenuItem, добавитьСвоюМодельToolStripMenuItem, добавитьСвойБрендToolStripMenuItem });
+            базаДанныхToolStripMenuItem.Name = "базаДанныхToolStripMenuItem";
+            resources.ApplyResources(базаДанныхToolStripMenuItem, "базаДанныхToolStripMenuItem");
+            // 
+            // перейтиКПапкеToolStripMenuItem
+            // 
+            перейтиКПапкеToolStripMenuItem.BackColor = Color.FromArgb(255, 192, 192);
+            перейтиКПапкеToolStripMenuItem.Name = "перейтиКПапкеToolStripMenuItem";
+            resources.ApplyResources(перейтиКПапкеToolStripMenuItem, "перейтиКПапкеToolStripMenuItem");
+            перейтиКПапкеToolStripMenuItem.Click += перейтиКПапкеToolStripMenuItem_Click;
+            // 
+            // добавитьСвоюМодельToolStripMenuItem
+            // 
+            добавитьСвоюМодельToolStripMenuItem.BackColor = Color.FromArgb(255, 192, 192);
+            добавитьСвоюМодельToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { руководствомодельToolStripMenuItem, добавитьмодельToolStripMenuItem });
+            добавитьСвоюМодельToolStripMenuItem.Name = "добавитьСвоюМодельToolStripMenuItem";
+            resources.ApplyResources(добавитьСвоюМодельToolStripMenuItem, "добавитьСвоюМодельToolStripMenuItem");
+            // 
+            // руководствомодельToolStripMenuItem
+            // 
+            руководствомодельToolStripMenuItem.BackColor = Color.FromArgb(255, 192, 192);
+            руководствомодельToolStripMenuItem.Name = "руководствомодельToolStripMenuItem";
+            resources.ApplyResources(руководствомодельToolStripMenuItem, "руководствомодельToolStripMenuItem");
+            руководствомодельToolStripMenuItem.Click += руководствомодельToolStripMenuItem_Click;
+            // 
+            // добавитьмодельToolStripMenuItem
+            // 
+            добавитьмодельToolStripMenuItem.BackColor = Color.FromArgb(255, 192, 192);
+            добавитьмодельToolStripMenuItem.Name = "добавитьмодельToolStripMenuItem";
+            resources.ApplyResources(добавитьмодельToolStripMenuItem, "добавитьмодельToolStripMenuItem");
+            добавитьмодельToolStripMenuItem.Click += добавитьмодельToolStripMenuItem_Click;
+            // 
+            // добавитьСвойБрендToolStripMenuItem
+            // 
+            добавитьСвойБрендToolStripMenuItem.BackColor = Color.FromArgb(255, 192, 192);
+            добавитьСвойБрендToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { руководствофирмаToolStripMenuItem1, добавитьфирмаToolStripMenuItem1 });
+            добавитьСвойБрендToolStripMenuItem.Name = "добавитьСвойБрендToolStripMenuItem";
+            resources.ApplyResources(добавитьСвойБрендToolStripMenuItem, "добавитьСвойБрендToolStripMenuItem");
+            // 
+            // руководствофирмаToolStripMenuItem1
+            // 
+            руководствофирмаToolStripMenuItem1.BackColor = Color.FromArgb(255, 192, 192);
+            руководствофирмаToolStripMenuItem1.Name = "руководствофирмаToolStripMenuItem1";
+            resources.ApplyResources(руководствофирмаToolStripMenuItem1, "руководствофирмаToolStripMenuItem1");
+            руководствофирмаToolStripMenuItem1.Click += руководствофирмуToolStripMenuItem1_Click;
+            // 
+            // добавитьфирмаToolStripMenuItem1
+            // 
+            добавитьфирмаToolStripMenuItem1.BackColor = Color.FromArgb(255, 192, 192);
+            добавитьфирмаToolStripMenuItem1.Name = "добавитьфирмаToolStripMenuItem1";
+            resources.ApplyResources(добавитьфирмаToolStripMenuItem1, "добавитьфирмаToolStripMenuItem1");
+            добавитьфирмаToolStripMenuItem1.Click += добавитьфирмуToolStripMenuItem1_Click;
+            // 
             // panelRes_GSO
             // 
             panelRes_GSO.BackColor = Color.FromArgb(255, 192, 192);
-            panelRes_GSO.Controls.Add(label1);
-            panelRes_GSO.Controls.Add(chartPrice_GSO);
             panelRes_GSO.Controls.Add(labelShopInfo_GSO);
             panelRes_GSO.Controls.Add(labelShowModels_GSO);
             panelRes_GSO.Controls.Add(labelRes_GSO);
@@ -240,27 +309,6 @@
             panelRes_GSO.Controls.Add(textBoxShopInfo_GSO);
             resources.ApplyResources(panelRes_GSO, "panelRes_GSO");
             panelRes_GSO.Name = "panelRes_GSO";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
-            // 
-            // chartPrice_GSO
-            // 
-            chartPrice_GSO.BackColor = Color.MistyRose;
-            chartPrice_GSO.BorderlineColor = Color.MistyRose;
-            chartArea1.Name = "ChartArea1";
-            chartPrice_GSO.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            chartPrice_GSO.Legends.Add(legend1);
-            resources.ApplyResources(chartPrice_GSO, "chartPrice_GSO");
-            chartPrice_GSO.Name = "chartPrice_GSO";
-            chartPrice_GSO.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartPrice_GSO.Series.Add(series1);
             // 
             // labelShopInfo_GSO
             // 
@@ -308,14 +356,17 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panelRes_GSO);
             Controls.Add(panelButtonsInPut_VAA);
+            MainMenuStrip = menuStrip1;
             Name = "FormMain";
             panelButtonsInPut_VAA.ResumeLayout(false);
+            panelButtonsInPut_VAA.PerformLayout();
             groupBoxInfo_GSO.ResumeLayout(false);
             groupBoxInfo_GSO.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             panelRes_GSO.ResumeLayout(false);
             panelRes_GSO.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)chartPrice_GSO).EndInit();
             ResumeLayout(false);
         }
 
@@ -326,7 +377,6 @@
         private System.Windows.Forms.RadioButton radioButtonDiagonal_GSO;
         private System.Windows.Forms.Label labelName_GSO;
         private System.Windows.Forms.Button buttonDone_GSO;
-        private System.Windows.Forms.Button buttonInfo_GSO;
         private System.Windows.Forms.Panel panelRes_GSO;
         private System.Windows.Forms.Label labelModel_GSO;
         private System.Windows.Forms.TextBox textBoxModel_GSO;
@@ -347,8 +397,17 @@
         private RadioButton radioButtonSSD_GSO;
         private RadioButton radioButtonProcessor_GSO;
         private Button button1;
-        private Button buttonPrice_GSO;
-        private Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartPrice_GSO;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem ToolStripMenuItemProgramm_GSO;
+        private ToolStripMenuItem ToolStripMenuAbout_GSO;
+        private ToolStripMenuItem выходToolStripMenuItem;
+        private ToolStripMenuItem базаДанныхToolStripMenuItem;
+        private ToolStripMenuItem перейтиКПапкеToolStripMenuItem;
+        private ToolStripMenuItem добавитьСвоюМодельToolStripMenuItem;
+        private ToolStripMenuItem руководствомодельToolStripMenuItem;
+        private ToolStripMenuItem добавитьмодельToolStripMenuItem;
+        private ToolStripMenuItem добавитьСвойБрендToolStripMenuItem;
+        private ToolStripMenuItem руководствофирмаToolStripMenuItem1;
+        private ToolStripMenuItem добавитьфирмаToolStripMenuItem1;
     }
 }
