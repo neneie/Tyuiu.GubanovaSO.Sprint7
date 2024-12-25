@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAiEAAACLCAYAAAC3D0kmAAAABGdBTUEAALGPC/xhBQAAPkxJREFUeF7t
         nXlYVEe+9+eP95nnvZM7eWa7977JZKJJvC4hGBQXEAUUBGURVFwQRUQRF4yiaJRFBQRFEBtRkUUQBQmL
@@ -390,7 +390,7 @@
         gg==
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox2_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAngAAAEXCAYAAAA+3TkoAAAABGdBTUEAALGPC/xhBQAARlRJREFUeF7t
         vXmUVdW56Pv+e/eNcce97+Um5+Sc5OXkNk9NDAajknAwiICCESUxJN4TTY4EyMF4iERQUCAqvdiAKIoQ
@@ -696,7 +696,7 @@
         CStgyyAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox3_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAW0AAABSCAYAAACfWoXuAAAABGdBTUEAALGPC/xhBQAAGqVJREFUeF7t
         nflfFFe6xu//ZGKQRWygUbwwsqkoKkpUQI0xDEHRMQPoaAhBUCe4jUpicIkbCleNgAiC7GvA2BJkUTTE
@@ -815,12 +815,12 @@
         CILwIUi0CYIgfAgSbYIgCB+CRJsgCMKHINEmCILwGfzw/74I9afgRaCCAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="label4_GSO.Text" xml:space="preserve">
     <value>Откройте созданный файл с помощью "Блокнот". Добавьте данные о моделях вашей фирмы в следующем формате:
 Модель;Диагональ экрана в дюймах;Разрешение экрана;Оперативная память;Объем SSD;Процессор;Процессор, частота
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox4_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABJAAAAAzCAYAAADIF/J6AAAABGdBTUEAALGPC/xhBQAANu1JREFUeF7t
         nX1wFkW+7/OPVZZUUSW1x5I6XrBYTR3eyugjRLKJCRAIBAIEjQJhI6BgBARUQN7cHIEDLl44giuv6h4F
@@ -1060,10 +1060,11 @@
         LCYI2Xx0icf7KxLg/wP5HVbE/1XL0wAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="label5_GSO.Text" xml:space="preserve">
     <value>После внесения данных в файл нажмите "Файл" в верхнем меню Блокнота. Выберите "Сохранить" и закройте файл.
-Закройте "Навигатор по ЭВМ" и снова откройте, чтобы обновить данные. Теперь ваша новая модель должна 
-отображаться в списке моделей.
+Закройте "Навигатор по ЭВМ" и снова откройте, чтобы обновить данные. Не забудьте так же обновить данные в файлах
+"ShopsInPutFile" и "Название_брендаPrice".
+
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

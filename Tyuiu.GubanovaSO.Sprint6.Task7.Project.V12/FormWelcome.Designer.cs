@@ -36,6 +36,7 @@
             buttonNext_GSO = new Button();
             pictureBoxKitty_GSO = new PictureBox();
             toolTip_GSO = new ToolTip(components);
+            labelWhat_GSO = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBoxKitty_GSO).BeginInit();
             SuspendLayout();
             // 
@@ -76,16 +77,22 @@
             // 
             toolTip_GSO.ToolTipTitle = "Подсказка";
             // 
+            // labelWhat_GSO
+            // 
+            resources.ApplyResources(labelWhat_GSO, "labelWhat_GSO");
+            labelWhat_GSO.Name = "labelWhat_GSO";
+            // 
             // FormWelcome
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            Controls.Add(pictureBoxKitty_GSO);
+            Controls.Add(labelWhat_GSO);
             Controls.Add(buttonNext_GSO);
             Controls.Add(buttonInfo_GSO);
             Controls.Add(labelPress_GSO);
             Controls.Add(labelWelcome_GSO);
+            Controls.Add(pictureBoxKitty_GSO);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "FormWelcome";
             ((System.ComponentModel.ISupportInitialize)pictureBoxKitty_GSO).EndInit();
@@ -101,5 +108,6 @@
         private Button buttonNext_GSO;
         private PictureBox pictureBoxKitty_GSO;
         private ToolTip toolTip_GSO;
+        private Label labelWhat_GSO;
     }
 }

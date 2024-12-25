@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
             label1 = new Label();
-            button1 = new Button();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            buttonOk_GSO = new Button();
+            pictureBoxI_GSO = new PictureBox();
+            labelWho_GSO = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxI_GSO).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -44,38 +44,38 @@
             label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
             // 
-            // button1
+            // buttonOk_GSO
             // 
-            button1.BackColor = Color.LightCoral;
-            button1.Location = new Point(561, 261);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(90, 36);
-            button1.TabIndex = 1;
-            button1.Text = "OK";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            buttonOk_GSO.BackColor = Color.LightCoral;
+            buttonOk_GSO.Location = new Point(561, 261);
+            buttonOk_GSO.Margin = new Padding(3, 4, 3, 4);
+            buttonOk_GSO.Name = "buttonOk_GSO";
+            buttonOk_GSO.Size = new Size(90, 36);
+            buttonOk_GSO.TabIndex = 1;
+            buttonOk_GSO.Text = "OK";
+            buttonOk_GSO.UseVisualStyleBackColor = false;
+            buttonOk_GSO.Click += button1_Click;
             // 
-            // pictureBox1
+            // pictureBoxI_GSO
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(13, 16);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(215, 281);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            pictureBoxI_GSO.Image = (Image)resources.GetObject("pictureBoxI_GSO.Image");
+            pictureBoxI_GSO.Location = new Point(13, 16);
+            pictureBoxI_GSO.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxI_GSO.Name = "pictureBoxI_GSO";
+            pictureBoxI_GSO.Size = new Size(215, 281);
+            pictureBoxI_GSO.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxI_GSO.TabIndex = 2;
+            pictureBoxI_GSO.TabStop = false;
             // 
-            // label2
+            // labelWho_GSO
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(234, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(418, 120);
-            label2.TabIndex = 3;
-            label2.Text = resources.GetString("label2.Text");
+            labelWho_GSO.AutoSize = true;
+            labelWho_GSO.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelWho_GSO.Location = new Point(234, 48);
+            labelWho_GSO.Name = "labelWho_GSO";
+            labelWho_GSO.Size = new Size(418, 120);
+            labelWho_GSO.TabIndex = 3;
+            labelWho_GSO.Text = resources.GetString("labelWho_GSO.Text");
             // 
             // FormAbout
             // 
@@ -83,9 +83,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
             ClientSize = new Size(663, 311);
-            Controls.Add(label2);
-            Controls.Add(pictureBox1);
-            Controls.Add(button1);
+            Controls.Add(labelWho_GSO);
+            Controls.Add(pictureBoxI_GSO);
+            Controls.Add(buttonOk_GSO);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(3, 4, 3, 4);
@@ -94,7 +94,7 @@
             Name = "FormAbout";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxI_GSO).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -102,8 +102,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Label label2;
+        private System.Windows.Forms.Button buttonOk_GSO;
+        private System.Windows.Forms.PictureBox pictureBoxI_GSO;
+        private Label labelWho_GSO;
     }
 }

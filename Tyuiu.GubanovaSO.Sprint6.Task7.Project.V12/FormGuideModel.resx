@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAjcAAAB7CAYAAACILaGQAAAABGdBTUEAALGPC/xhBQAAQGtJREFUeF7t
         vQlUVFfav8u6937rdvf3df9X99eD6fZqjIoQnEBEEVRUkEHEEUUwihARVBxwFhFUlFHAAUFmEFABtUDE
@@ -399,7 +399,7 @@
         rkJggg==
 </value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="labelGuide_GSO.Text" xml:space="preserve">
     <value>Найдите и нажмите на кнопку "Добавить". После нажатия кнопки "Добавить" откроется новое окно. В этом окне 
 вы увидите файлы с доступными фирмами-производителями. 
 
@@ -409,8 +409,8 @@
 
 
 
-Найдите и выберите файл с названием вашей фирмы-производителя. Убедитесь, что файл имеет формат .csv. Щелкните
-правой кнопкой мыши на файле и выберите "Открыть с помощью", затем выберите Блокнот (или другой текстовый редактор).
+Найдите и выберите файл с названием вашей фирмы-производителя. Убедитесь, что файл имеет формат .csv и заканчивается на
+"InPutFile". Щелкните правой кнопкой мыши на файле и выберите "Открыть с помощью", затем выберите Блокнот.
 
 
 
@@ -425,11 +425,10 @@
 
 
 После внесения изменений в файл нажмите "Файл" в верхнем меню Блокнота. Выберите "Сохранить" и закройте файл.
-Закройте "Навигатор по ЭВМ" и снова откройте, чтобы обновить данные. Теперь ваша новая модель должна отображаться в 
-списке моделей.
-</value>
+Закройте "Навигатор по ЭВМ" и снова откройте, чтобы обновить данные. Не забудьте так же обновить данные в файлах
+"ShopsInPutFile" и "Название_брендаPrice".</value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox2_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZ4AAAEwCAYAAACHaheRAAAABGdBTUEAALGPC/xhBQAASfJJREFUeF7t
         nYubVsWd5/sv2Mmuz846As/Ow17CkEzmjT26yorJSGcA24wkWVrH3hVZhV6JrBCYQHsLIaY1RhGlo2Jw
@@ -750,7 +749,7 @@
         EB4YDAari8nRfZWjuuqt3uE2Oh1E/x95zNxeTN0fiAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox3_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA00AAAC8CAYAAACkJUUNAAAABGdBTUEAALGPC/xhBQAAXTJJREFUeF7t
         vWe0VVW69/l+6y/9obtv9337HeN2XausKkMhWUFyRpSo5JwzopIlimRFshIEiZKRnHPOOUgQJAmIYKgq
@@ -1153,7 +1152,7 @@
         Ubp0aevbt28GhgwZ4n64nN8bDMIBQ0IIIR5Futv/DxrHa2lz1tylAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox4_GSO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABJAAAAAzCAYAAADIF/J6AAAABGdBTUEAALGPC/xhBQAANu1JREFUeF7t
         nX1wFkW+7/OPVZZUUSW1x5I6XrBYTR3eyugjRLKJCRAIBAIEjQJhI6BgBARUQN7cHIEDLl44giuv6h4F

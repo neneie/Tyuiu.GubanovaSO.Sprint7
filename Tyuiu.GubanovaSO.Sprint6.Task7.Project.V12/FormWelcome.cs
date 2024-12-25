@@ -19,13 +19,18 @@ namespace Tyuiu.GubanovaSO.Sprint6.Task7.Project.V12
         private void buttonNext_GSO_Click(object sender, EventArgs e)
         {
             FormMain mainForm = new FormMain();
-            mainForm.Show();
+            this.Hide();
+            mainForm.ShowDialog();
             this.Close();
         }
         private void buttonInfo_GSO_Click(object sender, EventArgs e)
         {
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
+        }
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //
         }
     }
 }
